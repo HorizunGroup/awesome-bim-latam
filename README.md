@@ -2,72 +2,74 @@
 
 # Awesome BIM LATAM 🧱 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-**Lista curada de herramientas, APIs, librerías y recursos para BIM — en español.**
+**A curated list of BIM tools, APIs, libraries and resources — every entry proven on a real construction project.**
 
-Mantenida por [Horizun Group](https://horizunhub.com) · BIM, datos e IA para construcción desde 2018.
+Maintained by [Horizun Group](https://horizunhub.com) · BIM, data & AI for construction since 2018.
 
 </div>
 
 ---
 
-Casi todo el ecosistema BIM está documentado en inglés. Esta lista recoge lo que realmente usamos en proyectos reales en Latinoamérica, explicado en español, para que un equipo AEC hispanohablante no tenga que traducir antes de empezar.
+Most awesome-lists are indexes: everything that exists, sorted. This one is a filter. Every entry here has been used by an AEC team on an actual jobsite in Latin America — a region where BIM budgets are tight, deadlines are tighter, and a tool either survives contact with a real project or it doesn't.
 
-**¿Falta algo?** Abre un [issue](../../issues) o un PR. Lee primero las [pautas de contribución](CONTRIBUTING.md).
+So the bar isn't "this exists". The bar is **"we shipped with it"**.
 
-## Contenido
+**Missing something?** Open an [issue](../../issues) or a PR — and tell us which project you used it on. See the [contributing guidelines](CONTRIBUTING.md).
 
-- [Estándares y fundamentos](#estándares-y-fundamentos)
-- [IFC y open source](#ifc-y-open-source)
-- [Revit — automatización](#revit--automatización)
+## Contents
+
+- [Standards & foundations](#standards--foundations)
+- [IFC & open source](#ifc--open-source)
+- [Revit automation](#revit-automation)
 - [Autodesk Platform Services (APS)](#autodesk-platform-services-aps)
-- [Coordinación y clash](#coordinación-y-clash)
-- [Datos y visualización](#datos-y-visualización)
-- [Contribuir](#contribuir)
+- [Coordination & clash detection](#coordination--clash-detection)
+- [Data & visualization](#data--visualization)
+- [Contributing](#contributing)
 
-## Estándares y fundamentos
+## Standards & foundations
 
-- [buildingSMART International](https://www.buildingsmart.org/) — El organismo detrás de IFC, BCF e IDS. Punto de partida obligado.
-- [Especificación IFC 4.3](https://ifc43-docs.standards.buildingsmart.org/) — Documentación oficial del esquema IFC.
-- [BCF (BIM Collaboration Format)](https://github.com/buildingSMART/BCF-XML) — El estándar abierto para intercambiar incidencias de coordinación entre plataformas.
-- [IDS (Information Delivery Specification)](https://github.com/buildingSMART/IDS) — Define y valida por computadora *qué* información debe traer un modelo. Clave para pre-entrega.
+- [buildingSMART International](https://www.buildingsmart.org/) — The body behind IFC, BCF and IDS. The non-negotiable starting point.
+- [IFC 4.3 specification](https://ifc43-docs.standards.buildingsmart.org/) — Official documentation of the IFC schema.
+- [BCF (BIM Collaboration Format)](https://github.com/buildingSMART/BCF-XML) — The open standard for moving coordination issues between platforms without lock-in.
+- [IDS (Information Delivery Specification)](https://github.com/buildingSMART/IDS) — Machine-checkable rules for *what* information a model must carry. The thing that makes handover reviews objective instead of an argument.
 
-## IFC y open source
+## IFC & open source
 
-- [IfcOpenShell](https://ifcopenshell.org/) — La librería base del ecosistema IFC abierto (Python/C++). Si vas a tocar IFC con código, empieza aquí.
-- [Bonsai (antes BlenderBIM)](https://bonsaibim.org/) — BIM nativo IFC dentro de Blender. Gratis y sorprendentemente capaz.
-- [That Open Engine (antes IFC.js)](https://github.com/ThatOpen/engine_web-ifc) — Visor y motor IFC en el navegador, con JavaScript.
-- [xBIM Toolkit](https://docs.xbim.net/) — Toolkit IFC para .NET.
-- [Speckle](https://speckle.systems/) — Plataforma abierta de intercambio de datos entre Revit, Rhino, Blender, Grasshopper y más.
+- [IfcOpenShell](https://ifcopenshell.org/) — The foundation of the open IFC ecosystem (Python/C++). If you're touching IFC with code, start here.
+- [Bonsai (formerly BlenderBIM)](https://bonsaibim.org/) — Native IFC authoring inside Blender. Free, and far more capable than you'd expect.
+- [That Open Engine (formerly IFC.js)](https://github.com/ThatOpen/engine_web-ifc) — IFC viewer and engine in the browser, in JavaScript.
+- [xBIM Toolkit](https://docs.xbim.net/) — IFC toolkit for .NET.
+- [Speckle](https://speckle.systems/) — Open data exchange across Revit, Rhino, Blender, Grasshopper and more.
 
-## Revit — automatización
+## Revit automation
 
-- [Revit API Docs](https://www.revitapidocs.com/) — La referencia de la API de Revit que todo el mundo usa de verdad.
-- [pyRevit](https://github.com/pyrevitlabs/pyRevit) — Scripts en Python dentro de Revit sin compilar nada. La puerta de entrada a la automatización.
-- [Dynamo](https://dynamobim.org/) — Programación visual para Revit y Civil 3D.
-- [The Building Coder](https://jeremytammik.github.io/tbc/a/) — El blog de Jeremy Tammik. Archivo histórico de casi cualquier problema de la Revit API.
+- [Revit API Docs](https://www.revitapidocs.com/) — The Revit API reference everyone actually uses.
+- [pyRevit](https://github.com/pyrevitlabs/pyRevit) — Python scripting inside Revit with nothing to compile. The realistic entry point to automation.
+- [Dynamo](https://dynamobim.org/) — Visual programming for Revit and Civil 3D.
+- [The Building Coder](https://jeremytammik.github.io/tbc/a/) — Jeremy Tammik's blog. The historical archive for nearly any Revit API problem you'll hit.
 
 ## Autodesk Platform Services (APS)
 
-- [APS — Documentación](https://aps.autodesk.com/developer/documentation) — Antes Forge. Traducción de modelos, visor web y datos en la nube.
-- [APS Viewer](https://aps.autodesk.com/en/docs/viewer/v7/developers_guide/overview/) — Visor 3D web para Revit, Navisworks, IFC y DWG.
-- [Model Derivative API](https://aps.autodesk.com/en/docs/model-derivative/v2/developers_guide/overview/) — Extrae geometría y propiedades del modelo hacia tus propios datos.
+- [APS documentation](https://aps.autodesk.com/developer/documentation) — Formerly Forge. Model translation, web viewer and cloud data.
+- [APS Viewer](https://aps.autodesk.com/en/docs/viewer/v7/developers_guide/overview/) — Web 3D viewer for Revit, Navisworks, IFC and DWG.
+- [Model Derivative API](https://aps.autodesk.com/en/docs/model-derivative/v2/developers_guide/overview/) — Pull geometry and properties out of the model and into your own data stack.
 
-## Coordinación y clash
+## Coordination & clash detection
 
-- [Navisworks .NET API](https://aps.autodesk.com/developer/overview/navisworks) — Automatiza clash tests, viewpoints y reportes.
-- [BCF-XML](https://github.com/buildingSMART/BCF-XML) — Intercambia incidencias sin quedar atado a una plataforma.
+- [Navisworks .NET API](https://aps.autodesk.com/developer/overview/navisworks) — Automate clash tests, viewpoints and reports.
+- [BCF-XML](https://github.com/buildingSMART/BCF-XML) — Exchange issues without being tied to one vendor.
 
-## Datos y visualización
+## Data & visualization
 
-- [Power BI](https://learn.microsoft.com/es-es/power-bi/) — Documentación oficial, en español.
-- [Lenguaje M (Power Query)](https://learn.microsoft.com/es-es/powerquery-m/) — Referencia del lenguaje con el que conectas datos del modelo.
-- [PowerBIM Online](https://pbim.horizunhub.com) — *(Horizun)* Sube tu modelo de Revit y obtén sus datos y un visor 3D dentro de Power BI.
-- [BIM Para Todos](https://www.youtube.com/@BIMParaTodos.HorizunAEC) — *(Horizun)* Canal en español sobre BIM, datos y Power BI aplicados a obra.
+- [Power BI](https://learn.microsoft.com/en-us/power-bi/) — Official documentation.
+- [M language (Power Query)](https://learn.microsoft.com/en-us/powerquery-m/) — Reference for the language you'll connect model data with.
+- [PowerBIM Online](https://pbim.horizunhub.com) — *(Horizun)* Upload a Revit model and get its data plus a 3D viewer inside Power BI.
+- [BIM Para Todos](https://www.youtube.com/@BIMParaTodos.HorizunAEC) — *(Horizun)* YouTube channel on BIM, data and Power BI applied to real jobsites. *In Spanish.*
 
-## Contribuir
+## Contributing
 
-Los aportes son bienvenidos. Lo único que pedimos: que el recurso sea **realmente útil en un proyecto real** y que expliques en una línea *por qué* lo es. Ver [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions are welcome. One rule: the resource must have **earned its place on a real project**, and you should say in one line *why*. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Licencia
+## License
 
-Bajo [CC0 1.0](LICENSE), Horizun Group renuncia a todos los derechos de autor sobre esta lista.
+Under [CC0 1.0](LICENSE), Horizun Group waives all copyright over this list.
