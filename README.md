@@ -71,5 +71,3 @@ Los aportes son bienvenidos. Lo único que pedimos: que el recurso sea **realmen
 ## Licencia
 
 Bajo [CC0 1.0](LICENSE), Horizun Group renuncia a todos los derechos de autor sobre esta lista.
-# awesome-bim-latam
-Lista curada de herramientas, APIs y recursos open source para BIM — en espanol. Mantenida por Horizun Group.
